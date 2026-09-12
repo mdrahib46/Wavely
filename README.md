@@ -37,11 +37,46 @@
 
 ---
 
+## 📱 Application Visual Showcase
+
+<div align="center">
+
+### Diagnostic & Spectrum Intelligence
+| 🟢 Beginner Diagnostic Dashboard | 🔵 Pro Spectrum Analyzer & Latency |
+| :---: | :---: |
+| <img src="assets/images/test_images/01_beginner_scan.png" width="380" alt="Beginner Mode - Health Score & AI Diagnostics" /> | <img src="assets/images/test_images/02_pro_spectrum.png" width="380" alt="Pro Mode - Spectrum Curves & Dual-Hop Latency" /> |
+| **Health Score & AI Diagnostics**<br/>*Circular health gauge (0–100), offline rule-based AI engine, and connected network telemetry.* | **Parabolic RF Curves & Dual-Hop Latency**<br/>*Live 2.4/5 GHz spectral power curves, gateway airtime vs. ISP WAN bufferbloat isolation.* |
+
+<br/>
+
+### LAN Subnet Intelligence & Node Telemetry
+| 🌐 Connected Subnet Inventory | 🔍 Hardware Node Deep Telemetry |
+| :---: | :---: |
+| <img src="assets/images/test_images/03_connected_devices.png" width="380" alt="Connected Devices - Subnet Inventory & Hostnames" /> | <img src="assets/images/test_images/04_device_detail.png" width="380" alt="Device Detail - Hardware Metrics & Bandwidth" /> |
+| **Zero-Cloud Subnet Discovery**<br/>*Pure on-device mDNS PTR, NetBIOS, and UPnP discovery with offline MAC OUI vendor resolution.* | **Deep Node Hardware Telemetry**<br/>*Link attenuation, session traffic counters, MAC vendor signatures, and DHCP telemetry.* |
+
+<br/>
+
+### Spatial AR & Air-Gapped Controls
+| 🎯 Spatial AR Viewfinder | 🛡️ Air-Gapped Privacy Hub |
+| :---: | :---: |
+| <img src="assets/images/test_images/05_ar_viewfinder.png" width="380" alt="AR Spatial Viewfinder - HUD & Reticle" /> | <img src="assets/images/test_images/06_settings_hub.png" width="380" alt="Settings Hub - Air-Gapped Privacy Controls" /> |
+| **Lite AR Signal HUD & Geiger Haptics**<br/>*Live camera reticle scaling with RSSI, tactile Geiger pulse vibration, and room anchor pins.* | **0-Byte Egress & Privacy Controls**<br/>*Zero external network calls, ephemeral ARP cache wiping, and RFC-4180 diagnostic exports.* |
+
+</div>
+
+---
+
 ## 🌟 Comprehensive Feature Tour
 
 ### 1. Dual-Tier RF Scanning Hub (`HomeDashboardScreen`)
 
 #### 🟢 Beginner Mode
+
+<p align="center">
+  <img src="assets/images/test_images/01_beginner_scan.png" width="320" alt="Beginner Mode - Health Score & AI Diagnostics" />
+</p>
+
 - **CustomPainter Circular Health Score Gauge (0–100)**:
   - Dynamically calculated from signal attenuation (dBm), co-channel/adjacent-channel overlap count, link speed, and encryption security standard.
   - Smooth semantic color transitions (Emerald `≥ 80`, Amber `50–79`, Rose `< 50`).
@@ -55,6 +90,11 @@
   - Live SSID, BSSID, security standard, channel, frequency band (2.4 GHz, 5 GHz, 6 GHz), link speed (Mbps), and dBm signal quality bar.
 
 #### 🔵 Pro Mode
+
+<p align="center">
+  <img src="assets/images/test_images/02_pro_spectrum.png" width="320" alt="Pro Mode - Spectrum Curves & Dual-Hop Latency" />
+</p>
+
 - **Overlapping RF Parabolic Curves (`fl_chart`)**:
   - Visualizes spectral power distribution across 2.4 GHz (Channels 1–14) and 5 GHz (Channels 36–165).
   - Parabolic bell curves reflect standard 20 MHz, 40 MHz, and 80 MHz channel widths with real-time dBm amplitude peaks.
@@ -73,6 +113,12 @@
 ---
 
 ### 2. Connected Devices & Subnet Inventory (`ConnectedDevicesScreen`)
+
+<p align="center">
+  <img src="assets/images/test_images/03_connected_devices.png" width="320" alt="Connected Devices - Subnet Inventory & Hostnames" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/images/test_images/04_device_detail.png" width="320" alt="Device Detail - Hardware Metrics & Bandwidth" />
+</p>
 
 Wavely's LAN engine discovers active nodes on your `/24` subnet without relying on any external cloud APIs:
 
@@ -93,6 +139,10 @@ Wavely's LAN engine discovers active nodes on your `/24` subnet without relying 
 
 ### 3. Spatial AR Viewfinder & Geiger Haptics (`ArViewfinderScreen`)
 
+<p align="center">
+  <img src="assets/images/test_images/05_ar_viewfinder.png" width="320" alt="AR Spatial Viewfinder - HUD & Reticle" />
+</p>
+
 - **Camera Viewfinder HUD Overlay**:
   - Live native camera preview with a fallback simulated spatial gradient for virtualized test environments.
   - Sub-pixel hairline crosshairs and heads-up display.
@@ -109,6 +159,10 @@ Wavely's LAN engine discovers active nodes on your `/24` subnet without relying 
 ---
 
 ### 4. Settings & Air-Gapped Privacy Hub (`SettingsHubScreen`)
+
+<p align="center">
+  <img src="assets/images/test_images/06_settings_hub.png" width="320" alt="Settings Hub - Air-Gapped Privacy Controls" />
+</p>
 
 - **0-Byte Egress Indicator**: Confirms that zero network telemetry is leaving the device.
 - **Ephemeral ARP Cache Retention**: Wipes cached subnet device tables upon application termination.
